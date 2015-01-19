@@ -40,7 +40,7 @@ class NexAlpha(dbus.service.Object):
       #self.signals.onError.connect(self.error)
 
     self.view = QtDeclarative.QDeclarativeView()
-    self.view.setSource("Main.qml")
+    self.view.setSource("qml/Main.qml")
     self.rootObject = self.view.rootObject()
     self.context = self.view.rootContext()
     #self.context.setContextProperty('timelineModel', self.timelineModel)
